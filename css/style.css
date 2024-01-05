@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+    --main-bg-color: hsl(204, 43%, 93%);
+
+    --secondary-text-color :hsl(204, 43%, 93%);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--main-bg-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width:576px) {
+    .container {
+        width: 540px;
+    }
+}
+@media (min-width:768px) {
+    .container {
+        width: 720px;
+    }
+}
+@media (min-width:992px) {
+    .container {
+        width: 960px;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+@media (min-width:1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+/* Start Blog */
+.container {
+    height: 100VH;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.component {
+    background-color: white;
+    width: 650px;
+    max-width: 100%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    box-shadow: 0 0 10px #e6e6e6;
+    overflow: hidden;
+}
+.component .head {
+    padding: 40px;
+}
+.component .head h2 {
+    color: #2bb3b1;
+}
+.component .head p.disc {
+    color: hsl(71, 73%, 54%);
+    font-weight: bold;
+}
+.component .head p:last-of-type {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+.component .body {
+    display: flex;
+}
+
+.component .body .subscription,
+.component .body .about {
+    flex: 1;
+    padding: 40px;
+}
+.component .body h3 {
+    color: white;
+    font-size: 22px;
+    margin-top: 0;
+}
+.component .body .subscription {
+    background-color: #2bb3b1;
+}
+.component .body .subscription .price {
+    color: #ffffffa1;
+}
+.component .body .subscription p:last-of-type {
+    color: var(--secondary-text-color)
+}
+.component .body .subscription .price span {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+.component .body .subscription > a {
+    display: block;
+    background-color: hsl(71, 73%, 54%);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-top: 30px;
+    transition: .3s .1s;
+    -webkit-transition: .3s .1s;
+    -moz-transition: .3s .1s;
+    -ms-transition: .3s .1s;
+    -o-transition: .3s .1s;
+}
+.component .body .subscription > a:hover {
+    background-color: hsl(71, 40%, 44%);
+}
+.component .body .about {
+    background-color: #4abebd;
+}
+.component .body .about li {
+    color: rgb(255 255 255 / 90%);
+    margin-bottom: 5px;
+}
+@media (max-width:767px) {
+    .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .component .body {
+        flex-direction: column;
+    }
+}
